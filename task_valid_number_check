@@ -1,0 +1,25 @@
+#valid number
+
+flag = 'YES'
+a = input().split('-') 
+if len(a) not in range(3, 5):
+    flag = 'NO'
+if len(a) in range(3, 5):
+    if len(a[-1]) != 4:
+        flag = 'NO'
+    elif len(a[-2]) != 3:
+        flag = 'NO'
+    elif len(a[-3]) != 3:
+        flag = 'NO'
+  
+if len(a) == 4 and len(a[0]) != 1:
+    flag = 'NO' 
+if len(a) == 4 and len(a[0]) == 1:
+    if a[0] not in '7':
+        flag = 'NO' 
+for i in a:
+    chars = list(i)
+    for j in chars:
+        if j not in '0123456789':
+            flag = 'NO'
+print(flag)
