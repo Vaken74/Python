@@ -1,4 +1,5 @@
 #valid number
+#The input to the program is a string of text. Write a program that determines if an input string is a valid phone number.
 
 flag = 'YES'
 a = input().split('-') 
