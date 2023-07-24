@@ -1,6 +1,6 @@
 # Sample_Task_'k'_letter_of_the_word
 # The input to the program is a natural number 'n' and 'n' lines followed by a number 'k'. Write a program that outputs 'k' letter from the entered strings on one line without spaces.
-
+ 
 n, y = int(input()), 0
 l = []
 for i in range(n):
