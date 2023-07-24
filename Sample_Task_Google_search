@@ -1,0 +1,14 @@
+# Sample_Task_Google_search
+# The input to the program is a natural number 'n', then 'n' lines, then number 'k' is the number of search queries, then 'k' lines are search queries. Write a program that prints out all the input strings that contain all search queries at the same time.
+
+counter = 0
+n = [input() for _ in range(int(input()))]
+k = [input() for i in range(int(input()))]
+
+for j in n:
+    counter = 0
+    for jj in k:
+        if jj.lower() in j.lower():
+            counter += 1
+            if counter == len(k):
+                print(j)
