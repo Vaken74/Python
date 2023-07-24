@@ -1,0 +1,10 @@
+#Sample_task  The input to the program is a string of text. Write a program that displays the character that appears most frequently on the screen.
+
+s, a, b, c = input(), 0, 0, 0 
+for i in s:
+    if s.count(i) >= 0:   
+        a = s.count(i)
+        if a >= b:
+            b = a
+            c = i
+print(c) 
